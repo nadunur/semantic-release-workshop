@@ -57,6 +57,6 @@ jobs:
 
       - name: Release
         env:
-          HUSKEY: 0 # Disable Husky during release
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          HUSKEY: 0
         run: npx semantic-release
